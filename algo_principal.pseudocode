@@ -1,0 +1,72 @@
+programme yams c'est
+
+    constante entier NBTOURTOTAL := 26 ;
+    constante entier VIDE := -1 ; 
+
+debut
+    joueur1, joueur2 : chaine(50) ;
+
+    tourJ1, tourJ2 : entier ;
+    tourTotal : entier ;
+
+    //définir toutes les variables pour feuille de marque joueur1 sans les totaux ni le bonus//
+    //définir toutes les variables pour feuille de marque joueur2 sans les totaux ni le bonus//
+    //mettre toutes les variables pour les feuilles de marque à -1 (CONSTANTE)//
+
+    //définir les variables des 5 dés//
+
+    tourJ1 := 1 ; 
+    tourJ2 := 1 
+    tourTotal = 1 ; 
+
+    ecrireEcran("Nom du joueur 1 ?") ; //saut ligne
+    lireClavier(joueur1) ;
+
+    ecrireEcran("Nom du joueur 2 ?"); //saut ligne 
+    lireClavier(joueur2) ;
+
+    tant que (tourTotal<=NBTOURTOTAL) faire
+
+        si (tourJ1<=tourJ2) alors
+    
+            ecrireEcran("Tour ",tourJ1," Joueur 1") ; //saut ligne
+            ecrireEcran(joueur1) ; //saut ligne
+
+            afficheFeuilleMarque(...) ;
+
+            lancementDesDés(...) ;
+
+            combinaison(...) ;
+
+            afficheFeuilleMarque(...) ;
+
+            ecrireEcran("Fin Tour ",tourJ1;" Joueur 1") ; //saut ligne
+
+            tourJ1 := tourJ1 + 1 ;
+
+        sinon 
+
+            ecrireEcran("Tour ",tourJ2," Joueur 2") ; //saut ligne
+            ecrireEcran(joueur2) ; //saut ligne
+
+            afficheFeuilleMarque(...) ;
+
+            lancementDesDés(...) ;
+
+            combinaison(...) ;
+
+            afficheFeuilleMarque(...) ;
+
+            ecrireEcran("Fin Tour ",tourJ2;" Joueur 2") ; //saut ligne
+
+            tourJ2 := tourJ2 + 1 ;
+
+        finsi
+
+        tourTotal := tourTotal + 1 ;
+
+    finfaire
+
+    afficheGagne(...) ;
+
+fin 

@@ -1,0 +1,75 @@
+//Liste de fonctions : (10 fonctions) 
+
+fonction fDé(...) délivre entier c'est
+Donne un nombre aléatoire entre 1 et 6 
+Paramètres : un dé parmis les 5 
+
+fonction fCalculT1(...) délivre entier c'est
+Calcule le total des 1
+Paramètres : les valeurs des 5 dés 
+
+fonction fCalculT2(...) délivre entier c'est
+Calcule le total des 2
+Paramètres : les valeurs des 5 dés 
+
+fonction fCalculT3(...) délivre entier c'est
+Calcule le total des 3
+Paramètres : les valeurs des 5 dés 
+
+fonction fCalculT4(...) délivre entier c'est
+Calcule le total des 4
+Paramètres : les valeurs des 5 dés 
+
+fonction fCalculT5(...) délivre entier c'est
+Calcule le total des 5
+Paramètres : les valeurs des 5 dés 
+
+fonction fCalculT6(...) délivre entier c'est
+Calcule le total des 6
+Paramètres : les valeurs des 5 dés 
+
+fonction fCalculBrelan(...) délivre entier c'est
+Calcule le total du Brelan
+Paramètres : les valeurs des 5 dés 
+
+fonction fCalculCarré(...) délivre entier c'est
+Calcule le total du Carré
+Paramètres : les valeurs des 5 dés 
+
+fonction fCalculChance(...) délivre entier c'est
+Calcule le total du Chance
+Paramètres : les valeurs des 5 dés
+
+//Liste de procédures : (5 procédures) 
+
+procedure afficheFeuilleMarque(...) c'est
+Affiche la feuille de marque du joueur
+Paramètres : toutes les variables de chaque ligne de la feuille de marque 
+
+procedure afficheDés(...) c'est
+Affiche les 5 dés après lancement
+→ utilise la fonction fDé
+Paramètres : les valeurs des 5 dés
+
+procedure afficheGagne(...) c'est 
+Affiche les scores finaux et le gagnant
+Paramètres : les noms des joueurs et les afficheFeuilleMarque de chacun des joueurs
+
+procedure combinaison(...) c'est 
+Affiche les combinaisons et permet au joueur de sélectionner la combinaison pour le tour
+Elle calcule aussi les totaux et le bonus 
+→ utilise les fonctions de calcul des scores de combinaison 
+Paramètres : les variables de combinaison de la feuille de marque (==toutes les variables de chaque ligne de la feuille de marque sauf les totaux et le bonus)
+
+procédure lancementDesDés(...) c'est
+Lance les dés et permet des les relancer 3 fois si le joueur le veut
+→ utilise la procédure afficheDés
+Paramètres : les valeurs des 5 dés 
+
+//Total : 15 fonctions et procédures 
+
+
+
+
+
+
